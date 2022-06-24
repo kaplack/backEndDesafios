@@ -80,8 +80,21 @@ item1 = {
   thumbnail: "google.com",
 };
 
-// test1.save(item1);
-// console.log(test1.getById(2));
-// test1.deleteById(1);
-console.log(test1.getAll());
+item2 = {
+  title: "lavadora",
+  price: 350,
+  thumbnail: "www.mercadolibre.com",
+};
+item3 = {
+  title: "celular",
+  price: 400,
+  thumbnail: "www.claro.com",
+};
+
+test1.save(item1);
+test1.save(item2);
+test1.save(item3);
+console.log("el item con el id 2 es:", test1.getById(2));
+//test1.deleteById(1);
+console.log("Estos son todos los productos:", test1.getAll());
 //test1.deleteAll();
